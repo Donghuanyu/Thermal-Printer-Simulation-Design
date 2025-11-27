@@ -12,8 +12,8 @@ let nextId = 0; // Simple ID generator
 const selectedElement = ref(null); // Stores the currently selected element
 const printerLanguage = ref('TSPL'); // Default to TSPL
 
-const paperWidth = ref(90); // Default paper width in mm
-const paperHeight = ref(90); // Default paper height in mm
+const paperWidth = ref(70); // Default paper width in mm
+const paperHeight = ref(70); // Default paper height in mm
 
 const addElement = (type) => {
   const newElement = {
@@ -143,7 +143,7 @@ watch(designElements, () => {
 <template>
   <div id="app-container">
     <header class="app-header">
-      <h1>CNPL CPCL设计</h1>
+      <h1>热敏打印机仿真设计</h1>
     </header>
     <main class="app-main">
       <aside class="app-sidebar">
